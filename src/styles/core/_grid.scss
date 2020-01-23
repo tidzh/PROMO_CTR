@@ -1,0 +1,7 @@
+.wrapper {
+  @include wrapper();
+}
+.main {
+  background: #16485f;
+  padding: 15px 0;
+}
