@@ -4,12 +4,7 @@
 <%= _.template(HEADER_TEMPLATE)(templateParameters) %>
 <main class="main">
 <div class="wrapper">
-<div class="interval only-mobile">
-	<div class="interval__text">Показатели за</div>
-	<div class="interval__time">
-		<div class="interval__time-content">c 17 января — по 23 января</div>
-	</div>
-</div>
+	<%= _.template(require('./views/interval.html').default)() %>
 </div>
 <div class="wrapper">
 <div class="main__inner">

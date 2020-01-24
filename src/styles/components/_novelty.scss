@@ -1,0 +1,64 @@
+.novelty {
+  .link {
+    margin: 35px auto 20px;
+    padding: 15px 10px;
+  }
+}
+
+.novelty__card {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #1c5c78;
+  border: 1px solid #326e88;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.novelty__table {
+  width: 100%;
+}
+
+.novelty__cell {
+  display: block;
+}
+
+.novelty__title {
+  font-family: $font-bold;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffff67;
+  margin: 10px 0;
+}
+
+.novelty__picture {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.novelty__img {
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .novelty__table {
+    display: table;
+  }
+
+  .novelty__cell {
+    display: table-cell;
+    vertical-align: top
+  }
+
+  .novelty__picture {
+    padding-right: 30px;
+    padding-bottom: 0;
+    width: 235px
+  }
+
+  .novelty .link {
+    margin: 25px 0 0
+  }
+}

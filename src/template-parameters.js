@@ -2,8 +2,8 @@ module.exports = {
   home: {
     title: 'Авторские офферы',
   },
-  footer: {
-    title: 'Footer Title Parameter',
+  new: {
+    title: 'Новинки',
   },
   notFound: {
     title: 'Not Found',

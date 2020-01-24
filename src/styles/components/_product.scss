@@ -5,8 +5,8 @@
   background: #1c5c78;
   border: 1px solid #326e88;
   border-radius: 5px;
-  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, .08);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, .08);
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .product__left {
@@ -54,7 +54,7 @@
 
 .product__title {
   margin-bottom: 15px;
-  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  font-family: $font-bold;
   font-size: 18px;
   color: #ffff67;
 }
@@ -73,7 +73,6 @@
   }
 }
 
-.novelty__description,
 .product__description {
   h4 {
     margin-bottom: 15px;
@@ -168,7 +167,7 @@
 }
 
 .statistics__text {
-  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  font-family: $font-bold;
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -234,7 +233,7 @@
 }
 
 .btn-show {
-  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
+  font-family: $font-bold;
   font-size: 14px;
   background: #edf5fb;
   padding: 5px 10px;
@@ -256,19 +255,6 @@
 }
 
 .product__link {
-  max-width: 200px;
-  padding: 10px 10px;
-  background-color: #0188cc;
-  border-radius: 5px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0 auto;
-  font-size: 14px;
-  margin-top: 30px;
 }
 
 .link__img, .link__text {
@@ -309,7 +295,7 @@
   }
 
   .product__table {
-    display: table
+    display: table;
   }
 
   .product__cell {
@@ -329,36 +315,11 @@
   .product__title {
     margin-bottom: 30px
   }
-
-  .geo__item {
-
-  }
-
   .graphs__table {
     display: table;
     width: 100%;
     table-layout: fixrd
   }
-
-  .novelty__table {
-    display: table
-  }
-
-  .novelty__cell {
-    display: table-cell;
-    vertical-align: top
-  }
-
-  .novelty__picture {
-    padding-right: 30px;
-    padding-bottom: 0;
-    width: 235px
-  }
-
-  .novelty .link {
-    margin: 25px 0 0
-  }
-
   .geography,
   .offers-list {
     overflow-x: unset
