@@ -9,8 +9,23 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, .08);
 }
 
+.product__left {
+  @include md-block() {
+    width: 260px;
+    padding: 30px 30px 0 30px;
+  }
+}
+
+.product__info {
+  @include md-block() {
+    padding: 30px 30px 20px 30px;
+    border-left: 1px solid #16485f;
+    width: calc(100% - 260px);
+  }
+}
+
 .product__card {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .product-hidden {
@@ -44,21 +59,40 @@
   color: #ffff67;
 }
 
-.novelty__description h4,
-.product__description h4 {
-  margin-bottom: 15px;
-  color: #ffff67;
+.product__cell_first {
+  @include md-block() {
+    width: 320px;
+    padding-right: 20px;
+  }
 }
 
-.novelty__description p,
-.product__description p {
-  font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
-  font-size: 15px;
+.product__cell_second {
+  @include md-block() {
+    width: calc(100% - 320px);
+    padding-left: 20px;
+  }
+}
+
+.novelty__description,
+.product__description {
+  h4 {
+    margin-bottom: 15px;
+    color: #ffff67;
+  }
+}
+
+.novelty__description,
+.product__description {
+  p {
+    font-family: "ProximaNova-Light", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
 }
 
 .product__description p {
   position: relative;
   margin-top: 20px;
+
   &:before {
     content: "";
     width: calc(100% + 30px);
@@ -68,7 +102,12 @@
     left: -15px;
     display: block;
     position: absolute;
+    @include md-block() {
+      width: 100%;
+      left: 0;
+    }
   }
+
   &:after {
     content: "";
     width: calc(100% + 30px);
@@ -78,14 +117,14 @@
     left: -15px;
     display: block;
     position: absolute;
+    @include md-block() {
+      display: none;
+    }
   }
 }
 
-.product__info--fst .product__cell {
-  padding-bottom: 1px;
-}
-
 .statistics__list {
+  position: relative;
   display: block;
   width: 100%;
   font-size: 0;
@@ -93,12 +132,36 @@
   padding: 20px 10px 6px;
   border: 1px solid #ffff67;
   border-radius: 0 20px 0 20px;
+  text-align: center;
+
+  &:after, &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    border-style: solid;
+    left: 10px;
+  }
+
+  &:before {
+    top: -22px;
+    border-color: transparent transparent #ffff67 transparent;
+    border-width: 11px;
+  }
+
+  &:after {
+    top: -20px;
+    border-color: transparent transparent #103545;
+    border-width: 10px;
+    left: 11px;
+  }
 }
 
 .statistics__item {
   display: inline-block;
   padding-right: 20px;
   margin-bottom: 15px;
+
   &:last-child {
     padding-right: 0;
   }
@@ -115,14 +178,16 @@
   font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: #3781a1;
+
   span {
     text-transform: lowercase;
   }
 }
 
 .offer__geo {
-  margin-top: 30px;
   position: relative;
+  margin-top: 30px;
+
   &:after {
     content: "";
     width: calc(100% + 30px);
@@ -132,7 +197,11 @@
     display: block;
     position: absolute;
     bottom: -10px;
+    @include md-block() {
+      display: none;
+    }
   }
+
   &:before {
     content: "";
     width: calc(100% + 30px);
@@ -142,25 +211,37 @@
     display: block;
     position: absolute;
     top: -10px;
+    @include md-block() {
+      display: none;
+    }
   }
+
+  @include md-block() {
+    max-width: 300px;
+    margin-top: 0;
+  }
+}
+
+.geo__list {
+  margin: 0 -4px;
+  font-size: 0;
 }
 
 .geo__item {
   display: inline-block;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding: 0 4px;
+  margin-bottom: 5px;
 }
 
 .btn-show {
   font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-  background: #edf5fb;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   font-size: 14px;
-  letter-spacing: -.02em;
-  color: #1d74f6;
-  cursor: pointer;
+  background: #edf5fb;
   padding: 5px 10px;
+  border-radius: 3px;
+  color: #1d74f6;
+  letter-spacing: -0.02em;
+  cursor: pointer;
 }
 
 .btn-show__wrap {
@@ -171,8 +252,9 @@
   border-radius: 10px;
   text-align: center;
   padding-top: 25px;
-  padding-bottom: 25px
+  padding-bottom: 25px;
 }
+
 .product__link {
   max-width: 200px;
   padding: 10px 10px;
@@ -188,25 +270,97 @@
   font-size: 14px;
   margin-top: 30px;
 }
+
 .link__img, .link__text {
   display: inline-block;
   vertical-align: middle;
 }
+
 .link__img {
-  width: 30px;
   position: relative;
+  width: 30px;
+
   &:after {
-    content: "";
     position: absolute;
+    top: 50%;
+    left: -8px;
     width: 1px;
     height: calc(100% + 20px);
-    background-color: #1c5c78;
-    left: -8px;
-    top: 50%;
     margin-top: -25px;
+    content: "";
+    background: #1c5c78;
   }
 }
+
 .link__text {
   width: calc(100% - 34px);
   padding-right: 10px;
+}
+
+.product__info--sec {
+  @include md-block() {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .product {
+    padding: 0;
+  }
+
+  .product__table {
+    display: table
+  }
+
+  .product__cell {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .product__row {
+    display: table;
+    width: 100%;
+  }
+
+  .product__picture {
+    margin-bottom: 0
+  }
+
+  .product__title {
+    margin-bottom: 30px
+  }
+
+  .geo__item {
+
+  }
+
+  .graphs__table {
+    display: table;
+    width: 100%;
+    table-layout: fixrd
+  }
+
+  .novelty__table {
+    display: table
+  }
+
+  .novelty__cell {
+    display: table-cell;
+    vertical-align: top
+  }
+
+  .novelty__picture {
+    padding-right: 30px;
+    padding-bottom: 0;
+    width: 235px
+  }
+
+  .novelty .link {
+    margin: 25px 0 0
+  }
+
+  .geography,
+  .offers-list {
+    overflow-x: unset
+  }
 }

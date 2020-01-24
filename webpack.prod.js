@@ -103,17 +103,5 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: path.resolve(__dirname, 'public/index.html'),
     }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      templateParameters,
-      template: path.resolve(__dirname, 'src/404.html'),
-      filename: path.resolve(__dirname, 'public/404.html'),
-    }),
-    new HtmlWebpackPlugin({
-      inject: true,
-      templateParameters,
-      template: path.resolve(__dirname, 'src/500.html'),
-      filename: path.resolve(__dirname, 'public/500.html'),
-    }),
   ],
 };

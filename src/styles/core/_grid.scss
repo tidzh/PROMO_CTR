@@ -1,7 +1,20 @@
 .wrapper {
   @include wrapper();
+  @include md-block() {
+    max-width: 1196px;
+  }
 }
 .main {
   background: #16485f;
   padding: 15px 0;
+  @include md-block() {
+    background: #103545;
+  }
+}
+.main__inner {
+  @include md-block() {
+    background: #16485f;
+    padding: 15px;
+    margin-top: -15px;
+  }
 }

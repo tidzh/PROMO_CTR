@@ -1,0 +1,30 @@
+.navigation {
+  transition: opacity .5s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  &_active {
+    opacity: 1;
+    height: auto;
+  }
+}
+.icon-close {
+  display: none !important;
+}
+
+.nav {
+  margin-top: 35px;
+}
+
+.nav__part {
+  margin-bottom: 25px;
+}
+
+.nav__link {
+  color: #437a8e;
+  text-decoration: none;
+
+  &_active {
+    color: #ffffff;
+  }
+}

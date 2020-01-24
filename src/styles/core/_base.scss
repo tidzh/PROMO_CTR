@@ -10,3 +10,16 @@ body {
   line-height: 1.3;
   position: relative;
 }
+.only-mobile {
+  display: block;
+  @include md-block() {
+    display: none;
+  }
+}
+
+.only-desktop {
+  display: none;
+  @include md-block() {
+    display: block;
+  }
+}

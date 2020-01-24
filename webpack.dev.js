@@ -26,38 +26,22 @@ module.exports = {
         use: ['babel-loader', 'eslint-loader'],
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
               sourceMap: true,
-              importLoaders: 1,
             },
           },
           {
-            loader: 'postcss-loader',
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
-              config: {
-                path: 'postcss.config.js',
-              },
             },
           },
         ],
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          "style-loader",
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader"
-        ]
       },
       {
         test: /\.html$/,

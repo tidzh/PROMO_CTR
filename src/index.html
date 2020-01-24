@@ -4,78 +4,166 @@
 <%= _.template(HEADER_TEMPLATE)(templateParameters) %>
 <main class="main">
 <div class="wrapper">
-	<div class="main__inner">
-		<div class="product__card">
-			<div class="product">
-				<div class="product__table">
-					<div class="product__cell">
-						<div class="product__picture">
-							<img src="img/product/pbk.png" class="product__img" alt="">
+<div class="interval only-mobile">
+	<div class="interval__text">Показатели за</div>
+	<div class="interval__time">
+		<div class="interval__time-content">c 17 января — по 23 января</div>
+	</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="main__inner">
+	<div class="product__card">
+		<div class="product">
+			<div class="product__table">
+				<div class="product__cell product__left">
+					<div class="product__picture">
+						<img src="img/product/pbk.png" class="product__img" alt="">
+					</div>
+					<div class="only-desktop">
+						<a class="product__link link" href="" target="_blank">
+							<span class="link__text">Перейти к офферу</span>
+							<span class="link__img"><img src="img/icon_btn.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+				<div class="product__cell product__info">
+					<div class="product__row">
+						<div class="product__cell product__cell_first">
+							<div class="product__description">
+								<h4 class="product__title">ПБК-20</h4>
+								<p>Профессиональный блокатор калорий-20 благодаря натуральному составу снижает вес в короткие сроки, очищает организм от токсинов и шлаков, нормализует обмен веществ, восстанавливает микрофлору кишечника</p>
+							</div>
+						</div>
+						<div class="product__cell product__cell_second">
+							<div class="product__graphs graphs">
+								<ul class="graphs__table">
+									<li class="graphs__cell">
+										<div class="graphs-gender">
+											<div class="product__title">Пол</div>
+											<canvas class="genderChart" width="275px"
+													data-series="[60, 25, 15]"></canvas>
+										</div>
+									</li>
+									<li class="graphs__cell">
+										<div class="graphs-traf">
+											<div class="product__title">Трафик</div>
+											<canvas class="traficChart" data-series="[82, 18]"
+													width="275px"></canvas>
+										</div>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-					<div class="product__cell product__info">
-						<div class="product__row product__info--fst">
-							<div class="product__cell">
-								<div class="product__description">
-									<h4 class="product__title">Titan Gel</h4>
-									<p>Профессиональный блокатор калорий-20 благодаря натуральному составу снижает вес в короткие сроки, очищает организм от токсинов и шлаков, нормализует обмен веществ, восстанавливает микрофлору кишечника</p>
-								</div>
+					<div class="product__row product__info--sec">
+						<div class="product__cell product__cell_first">
+							<div class="statistics">
+								<div class="product__title">Статистика</div>
+								<ul class="statistics__list">
+									<li class="statistics__item">
+										<div class="statistics__text">апрув <span
+												class="statistics__num">58.87%</span></div>
+									</li>
+									<li class="statistics__item">
+										<div class="statistics__text">ерс #<span
+												class="statistics__num">3.63</span></div>
+									</li>
+									<li class="statistics__item">
+										<div class="statistics__text">cr <span
+												class="statistics__num">2.11</span></div>
+									</li>
+									<li class="statistics__item">
+										<div class="statistics__text">отчисления <span
+												class="statistics__num"><span>до</span> 1000 <span>p.</span></span>
+										</div>
+									</li>
+								</ul>
 							</div>
-							<div class="product__cell">
-								<div class="product__graphs graphs">
-									<ul class="graphs__table">
-										<li class="graphs__cell">
-											<div class="graphs-gender">
-												<div class="product__title">Пол</div>
-												<canvas class="genderChart" width="275px" data-series="[60, 25, 15]"></canvas>
-											</div>
+						</div>
+						<div class="product__cell product__cell_second">
+							<div class="offer__geo">
+								<div class="geo">
+									<div class="product__title">Гео</div>
+									<ul class="geo__list">
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_at.png" alt=""
+												 class="flag">
 										</li>
-										<li class="graphs__cell">
-											<div class="graphs-traf">
-												<div class="product__title">Трафик</div>
-												<canvas class="traficChart" data-series="[82, 18]" width="275px"></canvas>
-											</div>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_am.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_bg.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ru.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_hu.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_az.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ee.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ee.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ua.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_kz.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_by.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_pt.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_kg.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_pl.png" alt=""
+												 class="flag">
 										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="product__row product__info--sec">
-							<div class="product__cell">
-								<div class="statistics">
-									<div class="product__title">Статистика</div>
-									<ul class="statistics__list">
-										<li class="statistics__item">
-											<div class="statistics__text">апрув <span class="statistics__num">58.87%</span></div>
-										</li>
-										<li class="statistics__item">
-											<div class="statistics__text">ерс #<span class="statistics__num">3.63</span></div>
-										</li>
-										<li class="statistics__item">
-											<div class="statistics__text">cr <span class="statistics__num">2.11</span></div>
-										</li>
-										<li class="statistics__item">
-											<div class="statistics__text">отчисления <span class="statistics__num"><span>до</span> 1000 <span>p.</span></span></div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="product__cell">
-								<div class="offer__geo">
-									<div class="geo">
-										<div class="product__title">Гео</div>
-										<ul class="geo__list">
-											<li class="geo__item">
-												<img src="https://ctr.ru/images/detail_img/flags/c_at.png" alt="" class="flag">
-												<img src="https://ctr.ru/images/detail_img/flags/c_am.png" alt="" class="flag">
-												<img src="https://ctr.ru/images/detail_img/flags/c_bg.png" alt="" class="flag">
-												<img src="https://ctr.ru/images/detail_img/flags/c_ru.png" alt="" class="flag">
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
+					</div>
+					<div class="only-mobile">
 						<a class="product__link link" href="" target="_blank">
 							<span class="link__text">Перейти к офферу</span>
 							<span class="link__img"><img src="img/icon_btn.png" alt=""></span>
@@ -85,6 +173,167 @@
 			</div>
 		</div>
 	</div>
+	<div class="product__card">
+		<div class="product">
+			<div class="product__table">
+				<div class="product__cell product__left">
+					<div class="product__picture">
+						<img src="img/product/eco_slim.png" class="product__img" alt="">
+					</div>
+					<div class="only-desktop">
+						<a class="product__link link" href="" target="_blank">
+							<span class="link__text">Перейти к офферу</span>
+							<span class="link__img"><img src="img/icon_btn.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+				<div class="product__cell product__info">
+					<div class="product__row">
+						<div class="product__cell product__cell_first">
+							<div class="product__description">
+								<h4 class="product__title">Eco Slim</h4>
+								<p>Шипучие конфеты на основе лесных ягод Eco Slim расщепляют и сжигают жиры, контролируют аппетит, очищают организм и ускоряют обмен веществ, оказывают тонизирующий эффект.</p>
+							</div>
+						</div>
+						<div class="product__cell product__cell_second">
+							<div class="product__graphs graphs">
+								<ul class="graphs__table">
+									<li class="graphs__cell">
+										<div class="graphs-gender">
+											<div class="product__title">Пол</div>
+											<canvas class="genderChart" width="275px"
+													data-series="[50, 25, 25]"></canvas>
+										</div>
+									</li>
+									<li class="graphs__cell">
+										<div class="graphs-traf">
+											<div class="product__title">Трафик</div>
+											<canvas class="traficChart" data-series="[82, 18]"
+													width="275px"></canvas>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="product__row product__info--sec">
+						<div class="product__cell product__cell_first">
+							<div class="statistics">
+								<div class="product__title">Статистика</div>
+								<ul class="statistics__list">
+									<li class="statistics__item">
+										<div class="statistics__text">апрув <span
+												class="statistics__num">58.87%</span></div>
+									</li>
+									<li class="statistics__item">
+										<div class="statistics__text">ерс #<span
+												class="statistics__num">3.63</span></div>
+									</li>
+									<li class="statistics__item">
+										<div class="statistics__text">cr <span
+												class="statistics__num">2.11</span></div>
+									</li>
+									<li class="statistics__item">
+										<div class="statistics__text">отчисления <span
+												class="statistics__num"><span>до</span> 600.00 <span>p.</span></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="product__cell product__cell_second">
+							<div class="offer__geo">
+								<div class="geo">
+									<div class="product__title">Гео</div>
+									<ul class="geo__list">
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_at.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_am.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_bg.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ru.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_hu.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_az.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ee.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ee.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_ua.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_kz.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_by.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_pt.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_kg.png" alt=""
+												 class="flag">
+										</li>
+										<li class="geo__item">
+											<img src="https://ctr.ru/images/detail_img/flags/c_pl.png" alt=""
+												 class="flag">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="only-mobile">
+						<a class="product__link link" href="" target="_blank">
+							<span class="link__text">Перейти к офферу</span>
+							<span class="link__img"><img src="img/icon_btn.png" alt=""></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 </main>
 <%= _.template(FOOTER_TEMPLATE)(templateParameters) %>

@@ -1,17 +1,19 @@
 .logo {
-  display: inline-block
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
 }
-
 .logo__name {
+  position: relative;
+  display: inline;
+  width: calc(100% - 105px);
+  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
   font-size: 22px;
   color: #ffff67;
-  font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
-  position: relative
-}
-
-.logo__name span {
-  font-size: 14px;
-  position: absolute;
-  top: 0;
-  right: -20px
+  span {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-size: 14px;
+  }
 }

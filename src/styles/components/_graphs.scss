@@ -1,6 +1,14 @@
+.graphs canvas {
+  width: 260px;
+  @include md-block() {
+    width: 240px;
+  }
+}
+
 .graphs__cell, .graphs__table {
   display: block
 }
+
 .graphs__cell {
   position: relative;
   margin: 20px 0;
@@ -13,20 +21,27 @@
     display: block;
     position: absolute;
     bottom: -10px;
+    @include md-block() {
+      display: none;
+    }
+  }
+
+  @include md-block() {
+    display: table-cell;
+    vertical-align: top
   }
 }
 
 .graphs .offer__title {
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .graphs-gender {
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  @include md-block() {
+    padding-bottom: 0;
+  }
 }
-
-//.graphs canvas {
-//  width: 235px
-//}
 
 #chartjs-tooltip {
   display: inline-block;

@@ -1,4 +1,130 @@
 .header {
-  background: #0b2835;
   padding: 12px 0;
+  background: #0b2835;
+  @include md-block() {
+    padding: 18px 0;
+  }
+}
+
+.interval-wrap {
+  display: none;
+  @include md-block() {
+    display: inline-block;
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+.interval {
+  margin-bottom: 15px;
+  color: #0188cc;
+  @include md-block() {
+    margin-bottom: 0;
+  }
+}
+
+.interval__text {
+  display: inline-block;
+  width: 120px;
+  vertical-align: middle;
+}
+
+.interval__time {
+  display: inline-block;
+  width: calc(100% - 125px);
+  vertical-align: middle;
+  @include md-block() {
+    width: initial;
+  }
+}
+
+.interval__time-content {
+  font-size: 13px;
+  line-height: 19px;
+  max-width: 187px;
+  font-weight: 300;
+  padding: 7px 4px;
+  border: 1px solid #0188cc;
+  border-radius: 5px;
+  text-align: center;
+  @include md-block() {
+    margin-left: 15px;
+    font-size: 14px;
+    max-width: 226px;
+    padding: 7px 20px;
+  }
+}
+
+.burger-wrap {
+  display: inline-block;
+  width: calc(100% - 105px);
+  color: #ffff67;
+  text-align: right;
+  vertical-align: middle;
+  @include md-block() {
+    display: none;
+  }
+}
+
+#burger {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: rotate(0deg);
+
+  span {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffff67;
+    border-radius: 9px;
+    opacity: 1;
+    transition: 0.25s ease-in-out;
+    transform: rotate(0deg);
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 5px;
+    }
+
+    &:nth-child(3) {
+      top: 10px;
+    }
+  }
+}
+
+#burger.open span:nth-child(1) {
+  top: 18px;
+  left: 50%;
+  width: 0;
+}
+
+#burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 5px;
+}
+
+#burger.open span:nth-child(4) {
+  top: 18px;
+  left: 50%;
+  width: 0;
+}
+.header-root {
+  @include md-block() {
+    display: flex;
+    align-items: center;
+  }
 }

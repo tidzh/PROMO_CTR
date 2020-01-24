@@ -1,6 +1,6 @@
 module.exports = {
-  header: {
-    title: 'Header Title Parameter',
+  home: {
+    title: 'Авторские офферы',
   },
   footer: {
     title: 'Footer Title Parameter',
