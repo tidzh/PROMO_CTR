@@ -1,9 +1,13 @@
 .wrapper {
   @include wrapper();
   @include md-block() {
-    max-width: 1196px;
+    max-width: 970px;
+  }
+  @include lg-block() {
+    max-width: 1140px;
   }
 }
+
 .main {
   background: #16485f;
   padding: 15px 0;
@@ -11,6 +15,7 @@
     background: #103545;
   }
 }
+
 .main__inner {
   @include md-block() {
     background: #16485f;

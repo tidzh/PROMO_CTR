@@ -1,8 +1,9 @@
 @include reset();
 
-*,*:after {
+*, *:after {
   box-sizing: border-box;
 }
+
 body {
   font-family: "ProximaNova-Regular", Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -10,10 +11,11 @@ body {
   line-height: 1.3;
   position: relative;
 }
+
 .only-mobile {
   display: block;
   @include md-block() {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -22,4 +24,8 @@ body {
   @include md-block() {
     display: block;
   }
+}
+
+.relative {
+  position: relative;
 }

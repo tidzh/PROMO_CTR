@@ -1,4 +1,10 @@
 .novelty {
+  @include md-block() {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px
+  }
+
   .link {
     margin: 35px auto 20px;
     padding: 15px 10px;
@@ -14,6 +20,21 @@
   border: 1px solid #326e88;
   border-radius: 5px;
   text-align: center;
+  @include md-block() {
+    display: flex;
+    text-align: left;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.novelty__item {
+  @include md-block() {
+    width: 50%;
+    padding: 0 7px;
+    margin-bottom: 10px;
+  }
 }
 
 .novelty__table {
@@ -22,8 +43,24 @@
 
 .novelty__cell {
   display: block;
+  @include md-block() {
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px 30px;
+  }
+  &_img {
+    @include md-block() {
+      width: 260px;
+      padding: 20px;
+      border-right: solid 1px #16485f;
+    }
+  }
+  &_text {
+    @include md-block() {
+      padding: 20px;
+    }
+  }
 }
-
 .novelty__title {
   font-family: $font-bold;
   font-size: 16px;
@@ -31,6 +68,21 @@
   font-weight: 700;
   color: #ffff67;
   margin: 10px 0;
+  @include md-block() {
+    margin-top: 0;
+  }
+}
+.novelty__description {
+  @include md-block() {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  p {
+    @include md-block() {
+      flex: 1 0 auto;
+    }
+  }
 }
 
 .novelty__picture {
@@ -47,13 +99,8 @@
     display: table;
   }
 
-  .novelty__cell {
-    display: table-cell;
-    vertical-align: top
-  }
-
   .novelty__picture {
-    padding-right: 30px;
+    padding-right: 0;
     padding-bottom: 0;
     width: 235px
   }

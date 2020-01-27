@@ -7,6 +7,13 @@
     opacity: 1;
     height: auto;
   }
+  @include lg-block(){
+    opacity: 1;
+    height: 100%;
+    position: absolute;
+    left: -170px;
+    width: 170px;
+  }
 }
 .icon-close {
   display: none !important;
@@ -14,17 +21,30 @@
 
 .nav {
   margin-top: 35px;
+  @include lg-block() {
+    margin-top: 15px;
+  }
 }
 
 .nav__part {
   margin-bottom: 25px;
+  @include lg-block() {
+    margin-bottom: 3px;
+  }
 }
 
 .nav__link {
   color: #437a8e;
   text-decoration: none;
-
   &_active {
     color: #ffffff;
+  }
+  @include lg-block() {
+    background: #0b2835;
+    display: block;
+    padding: 24px 20px;
+    color: #437a8e;
+    font-size: 14px;
+    border-radius: 5px 0 0 0;
   }
 }
