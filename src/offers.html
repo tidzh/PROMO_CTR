@@ -1,7 +1,9 @@
-<% var templateParameters = require('./template-parameters.js') %>
+<% var data = {
+title: "Топ офферов",
+}; %>
 <% var HEADER_TEMPLATE = require('./views/header.html').default %>
 <% var FOOTER_TEMPLATE = require('./views/footer.html').default %>
-<%= _.template(HEADER_TEMPLATE)(templateParameters) %>
+<%= _.template(HEADER_TEMPLATE)(data) %>
 <main class="main">
 	<div class="wrapper">
 		<%= _.template(require('./views/interval.html').default)() %>
@@ -13,16 +15,20 @@
 				<div class="offers-list">
 					<div class="only-desktop">
 						<div class="row-table offers-list__head">
-							<div class="cell-table cell-table-3">№</div>
+							<div class="cell-table cell-table-2">
+								<div class="cell-table__indent-left">№</div>
+							</div>
 							<div class="cell-table cell-table-4">ОФФЕР</div>
 							<div class="cell-table cell-table-5">Гео</div>
 							<div class="cell-table cell-table-3"> ОТЧИСЛЕНИЯ</div>
 							<div class="cell-table cell-table-2"> EPC</div>
-							<div class="cell-table cell-table-2"> CR</div>
+							<div class="cell-table cell-table-1">
+								<div class="cell-table__indent-right">CR</div>
+							</div>
 						</div>
 					</div>
 					<div class="row-table offers-list__list">
-						<div class="offers-list__list-number cell-table cell-table-3">
+						<div class="offers-list__list-number cell-table cell-table-2">
 							<div class="offers-list__header">№</div>
 							<div class="offers-list__list-number-int">1</div>
 							<img src="img/product/amulet.png" alt="MONEY AMULET (FREE)">
@@ -118,7 +124,7 @@
 							<div class="offers-list__header">EPC</div>
 							<div class="offers-list__list-row-value">16.51</div>
 						</div>
-						<div class="offers-list__list-row cell-table cell-table-2">
+						<div class="offers-list__list-row cell-table cell-table-1">
 							<div class="offers-list__header">CR</div>
 							<div class="offers-list__list-row-value">12.54</div>
 						</div>
@@ -127,7 +133,7 @@
 						</div>
 					</div>
 					<div class="row-table offers-list__list">
-						<div class="offers-list__list-number cell-table cell-table-3">
+						<div class="offers-list__list-number cell-table cell-table-2">
 							<div class="offers-list__header">№</div>
 							<div class="offers-list__list-number-int">2</div>
 							<img src="img/product/titan.png" alt="TITAN GEL">
@@ -217,13 +223,13 @@
 						</div>
 						<div class="offers-list__list-row cell-table cell-table-3">
 							<div class="offers-list__header">ОТЧИСЛЕНИЯ</div>
-							<div class="offers-list__list-row-value">до 600.00 p.</div>
+							<div class="offers-list__list-row-value">до 11600.00 p.</div>
 						</div>
 						<div class="offers-list__list-row cell-table cell-table-2">
 							<div class="offers-list__header">EPC</div>
 							<div class="offers-list__list-row-value">16.51</div>
 						</div>
-						<div class="offers-list__list-row cell-table cell-table-2">
+						<div class="offers-list__list-row cell-table cell-table-1">
 							<div class="offers-list__header">CR</div>
 							<div class="offers-list__list-row-value">12.54</div>
 						</div>
@@ -232,14 +238,239 @@
 						</div>
 					</div>
 					<div class="row-table offers-list__list">
-						<div class="offers-list__list-number cell-table cell-table-3">
+						<div class="offers-list__list-number cell-table cell-table-2">
 							<div class="offers-list__header">№</div>
-							<div class="offers-list__list-number-int">2</div>
-							<img src="img/product/titan.png" alt="TITAN GEL">
+							<div class="offers-list__list-number-int">3</div>
+							<img src="img/product/product-5.png" alt="TITAN GEL">
 						</div>
 						<div class="offers-list__list-title cell-table cell-table-4">
 							<div class="offers-list__header">ОФФЕР</div>
-							<div class="offers-list__list-title-name">TITAN GEL</div>
+							<div class="offers-list__list-title-name">BLACK LATTE - средство для
+								похудения</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-5">
+							<div class="geo">
+								<div class="offers-list__header">Гео</div>
+								<ul class="geo__list">
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_at.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_am.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_bg.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_ru.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_hu.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_ua.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_kz.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_by.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_pt.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_kg.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_pl.png" alt=""
+											 class="flag">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-3">
+							<div class="offers-list__header">ОТЧИСЛЕНИЯ</div>
+							<div class="offers-list__list-row-value">до 600.00 p.</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-2">
+							<div class="offers-list__header">EPC</div>
+							<div class="offers-list__list-row-value">16.51</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-1">
+							<div class="offers-list__header">CR</div>
+							<div class="offers-list__list-row-value">12.54</div>
+						</div>
+						<div class="offers-list__list-row only-mobile">
+							<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+						</div>
+					</div>
+					<div class="row-table offers-list__list">
+						<div class="offers-list__list-number cell-table cell-table-2">
+							<div class="offers-list__header">№</div>
+							<div class="offers-list__list-number-int">4</div>
+							<img src="img/product/product-6.png" alt="TITAN GEL">
+						</div>
+						<div class="offers-list__list-title cell-table cell-table-4">
+							<div class="offers-list__header">ОФФЕР</div>
+							<div class="offers-list__list-title-name">MEN`S DEFENCE - средство против
+								простатита</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-5">
+							<div class="geo">
+								<div class="offers-list__header">Гео</div>
+								<ul class="geo__list">
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_kg.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_pl.png" alt=""
+											 class="flag">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-3">
+							<div class="offers-list__header">ОТЧИСЛЕНИЯ</div>
+							<div class="offers-list__list-row-value">до 600.00 p.</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-2">
+							<div class="offers-list__header">EPC</div>
+							<div class="offers-list__list-row-value">16.51</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-1">
+							<div class="offers-list__header">CR</div>
+							<div class="offers-list__list-row-value">12.54</div>
+						</div>
+						<div class="offers-list__list-row only-mobile">
+							<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+						</div>
+					</div>
+					<div class="row-table offers-list__list">
+						<div class="offers-list__list-number cell-table cell-table-2">
+							<div class="offers-list__header">№</div>
+							<div class="offers-list__list-number-int">5</div>
+							<img src="img/product/product-7.png" alt="TITAN GEL">
+						</div>
+						<div class="offers-list__list-title cell-table cell-table-4">
+							<div class="offers-list__header">ОФФЕР</div>
+							<div class="offers-list__list-title-name">MARAL GEL - гель для увеличения</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-5">
+							<div class="geo">
+								<div class="offers-list__header">Гео</div>
+								<ul class="geo__list">
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_at.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_am.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_bg.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_ru.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_hu.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_gr.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_az.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_ee.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_ee.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_ua.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_sk.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_kz.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_kg.png" alt=""
+											 class="flag">
+									</li>
+									<li class="geo__item">
+										<img src="https://ctr.ru/images/detail_img/flags/c_pl.png" alt=""
+											 class="flag">
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-3">
+							<div class="offers-list__header">ОТЧИСЛЕНИЯ</div>
+							<div class="offers-list__list-row-value">до 600.00 p.</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-2">
+							<div class="offers-list__header">EPC</div>
+							<div class="offers-list__list-row-value">16.51</div>
+						</div>
+						<div class="offers-list__list-row cell-table cell-table-1">
+							<div class="offers-list__header">CR</div>
+							<div class="offers-list__list-row-value">12.54</div>
+						</div>
+						<div class="offers-list__list-row only-mobile">
+							<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+						</div>
+					</div>
+					<div class="row-table offers-list__list">
+						<div class="offers-list__list-number cell-table cell-table-2">
+							<div class="offers-list__header">№</div>
+							<div class="offers-list__list-number-int">6</div>
+							<img src="img/product/product-8.png" alt="TITAN GEL">
+						</div>
+						<div class="offers-list__list-title cell-table cell-table-4">
+							<div class="offers-list__header">ОФФЕР</div>
+							<div class="offers-list__list-title-name">Маска для волос PRINCESS HAIR</div>
 						</div>
 						<div class="offers-list__list-row cell-table cell-table-5">
 							<div class="geo">
@@ -328,7 +559,7 @@
 							<div class="offers-list__header">EPC</div>
 							<div class="offers-list__list-row-value">16.51</div>
 						</div>
-						<div class="offers-list__list-row cell-table cell-table-2">
+						<div class="offers-list__list-row cell-table cell-table-1">
 							<div class="offers-list__header">CR</div>
 							<div class="offers-list__list-row-value">12.54</div>
 						</div>
@@ -341,4 +572,4 @@
 		</div>
 	</div>
 </main>
-<%= _.template(FOOTER_TEMPLATE)(templateParameters) %>
+<%= _.template(FOOTER_TEMPLATE)() %>

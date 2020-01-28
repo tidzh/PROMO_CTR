@@ -11,4 +11,11 @@
   text-transform: uppercase;
   font-size: 14px;
   margin: 30px auto 0;
+  border: none;
+  cursor: pointer;
+  &_geotop {
+    max-width: 165px;
+    font-size: 13px;
+    padding: 16px 10px;
+  }
 }

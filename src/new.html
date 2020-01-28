@@ -1,114 +1,119 @@
-<% var templateParameters = require('./template-parameters.js') %>
+<% var data = {
+title: "Новининки",
+}; %>
 <% var HEADER_TEMPLATE = require('./views/header.html').default %>
 <% var FOOTER_TEMPLATE = require('./views/footer.html').default %>
-<%= _.template(HEADER_TEMPLATE)(templateParameters) %>
+<%= _.template(HEADER_TEMPLATE)(data) %>
 <main class="main">
 	<div class="wrapper">
 		<%= _.template(require('./views/interval.html').default)() %>
-		<div class="main__inner">
-			<div class="novelty">
-				<div class="novelty__item">
-					<div class="novelty__card">
-						<div class="novelty__cell novelty__cell_img">
-							<div class="novelty__picture">
-								<img class="novelty__img" src="img/product/product-1.png" width="200px">
+		<div class="relative">
+			<%= _.template(require('./views/menu.html').default)() %>
+			<div class="main__inner">
+				<div class="novelty">
+					<div class="novelty__item">
+						<div class="novelty__card">
+							<div class="novelty__cell novelty__cell_img">
+								<div class="novelty__picture">
+									<img class="novelty__img" src="img/product/product-1.png" width="200px">
+								</div>
 							</div>
-						</div>
-						<div class="novelty__cell novelty__cell_text">
-							<div class="novelty__description">
-								<h4 class="novelty__title">Лазерный проектор для Рождества с картриджами</h4>
-								<p>Лазерный проектор с картриджем - самый яркий и красочный способ праздничного
-									освещения Вашего дома как внутри так и снаружи.</p>
-								<a class="novelty__link link" href="" target="_blank">Подробнее</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="novelty__item">
-					<div class="novelty__card">
-						<div class="novelty__cell novelty__cell_img">
-							<div class="novelty__picture">
-								<img class="novelty__img" src="img/product/product-2.png" width="200px">
-							</div>
-						</div>
-						<div class="novelty__cell novelty__cell_text">
-							<div class="novelty__description">
-								<h4 class="novelty__title">Gefex - Энергосберегающий обогреватель</h4>
-								<p>Пусть зима будет теплой! Портативный энергосберегающий обогреватель Gefex нагревает
-									комнату за 15 мин до 32°С, экономит электроэнергию до 8-ми раз, убивает вирусы и
-									бактерии. ВНИМАНИЕ! акция.</p>
-								<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+							<div class="novelty__cell novelty__cell_text">
+								<div class="novelty__description">
+									<h4 class="novelty__title">Лазерный проектор для Рождества с картриджами</h4>
+									<p>Лазерный проектор с картриджем - самый яркий и красочный способ праздничного
+										освещения Вашего дома как внутри так и снаружи.</p>
+									<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="novelty__item">
-					<div class="novelty__card">
-						<div class="novelty__cell novelty__cell_img">
-							<div class="novelty__picture">
-								<img class="novelty__img" src="img/product/product-3.png" width="200px">
+					<div class="novelty__item">
+						<div class="novelty__card">
+							<div class="novelty__cell novelty__cell_img">
+								<div class="novelty__picture">
+									<img class="novelty__img" src="img/product/product-2.png" width="200px">
+								</div>
 							</div>
-						</div>
-						<div class="novelty__cell novelty__cell_text">
-							<div class="novelty__description">
-								<h4 class="novelty__title">3D светильник</h4>
-								<p>3D-ночник – высокотехнологичный и безопасный аксессуар, созданный российскими
-									разработчиками. В комплект поставки входит: акриловый каркас с лазерной гравировкой,
-									основание из</p>
-								<a class="novelty__link link" href="" target="_blank">Подробнее</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="novelty__item">
-					<div class="novelty__card">
-						<div class="novelty__cell novelty__cell_img">
-							<div class="novelty__picture">
-								<img class="novelty__img" src="img/product/product-4.png" width="200px">
-							</div>
-						</div>
-						<div class="novelty__cell novelty__cell_text">
-							<div class="novelty__description">
-								<h4 class="novelty__title">Loravit - средство для восстановления слуха (196 руб)</h4>
-								<p>Естественное восстановление слуха. Устраняет боль и снимает воспаление, способствует
-									восстановлению слухового аппарата, борьбе с бактериальными хроническими
-									лор-инфекциями, усиливает остроту слуха.</p>
-								<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+							<div class="novelty__cell novelty__cell_text">
+								<div class="novelty__description">
+									<h4 class="novelty__title">Gefex - Энергосберегающий обогреватель</h4>
+									<p>Пусть зима будет теплой! Портативный энергосберегающий обогреватель Gefex нагревает
+										комнату за 15 мин до 32°С, экономит электроэнергию до 8-ми раз, убивает вирусы и
+										бактерии. ВНИМАНИЕ! акция.</p>
+									<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="novelty__item">
-					<div class="novelty__card">
-						<div class="novelty__cell novelty__cell_img">
-							<div class="novelty__picture">
-								<img class="novelty__img" src="img/product/product-1.png" width="200px">
+					<div class="novelty__item">
+						<div class="novelty__card">
+							<div class="novelty__cell novelty__cell_img">
+								<div class="novelty__picture">
+									<img class="novelty__img" src="img/product/product-3.png" width="200px">
+								</div>
 							</div>
-						</div>
-						<div class="novelty__cell novelty__cell_text">
-							<div class="novelty__description">
-								<h4 class="novelty__title">Лазерный проектор для Рождества с картриджами</h4>
-								<p>Лазерный проектор с картриджем - самый яркий и красочный способ праздничного
-									освещения Вашего дома как внутри так и снаружи.</p>
-								<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+							<div class="novelty__cell novelty__cell_text">
+								<div class="novelty__description">
+									<h4 class="novelty__title">3D светильник</h4>
+									<p>3D-ночник – высокотехнологичный и безопасный аксессуар, созданный российскими
+										разработчиками. В комплект поставки входит: акриловый каркас с лазерной гравировкой,
+										основание из</p>
+									<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="novelty__item">
-					<div class="novelty__card">
-						<div class="novelty__cell novelty__cell_img">
-							<div class="novelty__picture">
-								<img class="novelty__img" src="img/product/product-2.png" width="200px">
+					<div class="novelty__item">
+						<div class="novelty__card">
+							<div class="novelty__cell novelty__cell_img">
+								<div class="novelty__picture">
+									<img class="novelty__img" src="img/product/product-4.png" width="200px">
+								</div>
+							</div>
+							<div class="novelty__cell novelty__cell_text">
+								<div class="novelty__description">
+									<h4 class="novelty__title">Loravit - средство для восстановления слуха (196 руб)</h4>
+									<p>Естественное восстановление слуха. Устраняет боль и снимает воспаление, способствует
+										восстановлению слухового аппарата, борьбе с бактериальными хроническими
+										лор-инфекциями, усиливает остроту слуха.</p>
+									<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+								</div>
 							</div>
 						</div>
-						<div class="novelty__cell novelty__cell_text">
-							<div class="novelty__description">
-								<h4 class="novelty__title">Gefex - Энергосберегающий обогреватель</h4>
-								<p>Пусть зима будет теплой! Портативный энергосберегающий обогреватель Gefex нагревает
-									комнату за 15 мин до 32°С, экономит электроэнергию до 8-ми раз, убивает вирусы и
-									бактерии. ВНИМАНИЕ! акция.</p>
-								<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+					</div>
+					<div class="novelty__item">
+						<div class="novelty__card">
+							<div class="novelty__cell novelty__cell_img">
+								<div class="novelty__picture">
+									<img class="novelty__img" src="img/product/product-1.png" width="200px">
+								</div>
+							</div>
+							<div class="novelty__cell novelty__cell_text">
+								<div class="novelty__description">
+									<h4 class="novelty__title">Лазерный проектор для Рождества с картриджами</h4>
+									<p>Лазерный проектор с картриджем - самый яркий и красочный способ праздничного
+										освещения Вашего дома как внутри так и снаружи.</p>
+									<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="novelty__item">
+						<div class="novelty__card">
+							<div class="novelty__cell novelty__cell_img">
+								<div class="novelty__picture">
+									<img class="novelty__img" src="img/product/product-2.png" width="200px">
+								</div>
+							</div>
+							<div class="novelty__cell novelty__cell_text">
+								<div class="novelty__description">
+									<h4 class="novelty__title">Gefex - Энергосберегающий обогреватель</h4>
+									<p>Пусть зима будет теплой! Портативный энергосберегающий обогреватель Gefex нагревает
+										комнату за 15 мин до 32°С, экономит электроэнергию до 8-ми раз, убивает вирусы и
+										бактерии. ВНИМАНИЕ! акция.</p>
+									<a class="novelty__link link" href="" target="_blank">Подробнее</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -117,4 +122,4 @@
 		</div>
 	</div>
 </main>
-<%= _.template(FOOTER_TEMPLATE)(templateParameters) %>
+<%= _.template(FOOTER_TEMPLATE)() %>

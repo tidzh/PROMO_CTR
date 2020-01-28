@@ -1,0 +1,717 @@
+<% var data = {
+title: "Топ по гео",
+}; %>
+<% var HEADER_TEMPLATE = require('./views/header.html').default %>
+<% var FOOTER_TEMPLATE = require('./views/footer.html').default %>
+<%= _.template(HEADER_TEMPLATE)(data) %>
+<main class="main">
+	<div class="wrapper">
+		<%= _.template(require('./views/interval.html').default)() %>
+	</div>
+	<div class="wrapper">
+		<div class="relative">
+			<%= _.template(require('./views/menu.html').default)() %>
+			<div class="main__inner">
+				<div class="geo-top">
+					<div class="only-desktop">
+						<div class="row-table offers-list__head">
+							<div class="cell-table cell-table-2">
+								<div class="cell-table__indent-left">Гео</div>
+							</div>
+							<div class="cell-table cell-table-10">
+								<div class="cell-table cell-table-4">ОФФЕР</div>
+								<div class="cell-table cell-table-1_5">ОТЧИСЛЕНИЯ</div>
+								<div class="cell-table cell-table-1">CR</div>
+								<div class="cell-table cell-table-1"> EPC</div>
+								<div class="cell-table cell-table-1_5">
+									<div class="cell-table__indent-right">REAL APPROVE</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="geo-parent">
+						<div class="geo-top-wrap">
+							<div class="row-table geo-top__list">
+								<div class="geo-top__list-parent">
+									<div class="only-mobile">
+										<div class="row-table offers-list__head">
+											<div class="cell-table cell-table-2">
+												<div class="cell-table__indent-left">Гео</div>
+											</div>
+											<div class="cell-table cell-table-10">
+												<div class="cell-table cell-table-4">ОФФЕР</div>
+												<div class="cell-table cell-table-1_5">ОТЧИСЛЕНИЯ</div>
+												<div class="cell-table cell-table-1">CR</div>
+												<div class="cell-table cell-table-1"> EPC</div>
+												<div class="cell-table cell-table-1_5">
+													<div class="cell-table__indent-right">REAL APPROVE</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="geo-top__list-wrap">
+										<div class="geo-top-country">
+											<div class="geo-top-country-wrap">
+												<img src="img/ru.jpg" alt="Россия" class="geo-top-country__flag">
+												<div class="geo-top-country__title">Россия</div>
+											</div>
+										</div>
+										<div class="geo-top-info">
+											<ul class="geo-top-info__list">
+												<li class="products__item">
+													<a href="" target="_blank">
+														<ul class="offer-info">
+															<li class="offer-info__item"><span class="item-num">1</span>
+															</li>
+															<li class="offer-info__item cell-table cell-table-4">Black
+																Latte
+																- средство для похудения
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">до
+																1200.00р.
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">2.41
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">4.42
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">47.55
+															</li>
+														</ul>
+													</a>
+												</li>
+												<li class="products__item">
+													<a href="" target="_blank">
+														<ul class="offer-info">
+															<li class="offer-info__item"><span class="item-num">2</span>
+															</li>
+															<li class="offer-info__item cell-table cell-table-4">Money
+																amulet (free)
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">до
+																1200.00р.
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">2.41
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">4.42
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">47.55
+															</li>
+														</ul>
+													</a>
+												</li>
+												<li class="products__item">
+													<a href="" target="_blank">
+														<ul class="offer-info">
+															<li class="offer-info__item"><span class="item-num">3</span>
+															</li>
+															<li class="offer-info__item cell-table cell-table-4">Titan
+																Gel
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">до
+																1200.00р.
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">2.41
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">4.42
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">47.55
+															</li>
+														</ul>
+													</a>
+												</li>
+												<li class="products__item">
+													<a href="" target="_blank">
+														<ul class="offer-info">
+															<li class="offer-info__item"><span class="item-num">4</span>
+															</li>
+															<li class="offer-info__item cell-table cell-table-4">
+																Неинвазивный Глюкометр Glucowise
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">до
+																1200.00р.
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">2.41
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">4.42
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">47.55
+															</li>
+														</ul>
+													</a>
+												</li>
+												<li class="products__item">
+													<a href="" target="_blank">
+														<ul class="offer-info">
+															<li class="offer-info__item"><span class="item-num">5</span>
+															</li>
+															<li class="offer-info__item cell-table cell-table-4">Black
+																Sensation - детокс шампунь
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">до
+																1200.00р.
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">2.41
+															</li>
+															<li class="offer-info__item cell-table cell-table-1">4.42
+															</li>
+															<li class="offer-info__item cell-table cell-table-1_5">47.55
+															</li>
+														</ul>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row-table geo-top__list">
+								<div class="geo-top-country">
+									<div class="geo-top-country-wrap">
+										<img src="img/kz.jpg" alt="Казахстан" class="geo-top-country__flag">
+										<div class="geo-top-country__title">Казахстан</div>
+									</div>
+								</div>
+								<div class="geo-top-info">
+									<ul class="geo-top-info__list">
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">1</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Latte -
+														средство для похудения
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">2</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Money amulet
+														(free)
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">3</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Titan Gel</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">4</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Неинвазивный
+														Глюкометр Glucowise
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">5</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Sensation
+														- детокс шампунь
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-table geo-top__list">
+								<div class="geo-top-country">
+									<div class="geo-top-country-wrap">
+										<img src="img/europa.jpg" alt="УКРАИНА" class="geo-top-country__flag">
+										<div class="geo-top-country__title">УКРАИНА</div>
+									</div>
+								</div>
+								<div class="geo-top-info">
+									<ul class="geo-top-info__list">
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">1</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Latte -
+														средство для похудения
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">2</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Money amulet
+														(free)
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">3</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Titan Gel</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">4</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Неинвазивный
+														Глюкометр Glucowise
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">5</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Sensation
+														- детокс шампунь
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-table geo-top__list">
+								<div class="geo-top-country">
+									<div class="geo-top-country-wrap">
+										<img src="img/uz.jpg" alt="УЗБЕКИСТАН" class="geo-top-country__flag">
+										<div class="geo-top-country__title">УЗБЕКИСТАН</div>
+									</div>
+								</div>
+								<div class="geo-top-info">
+									<ul class="geo-top-info__list">
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">1</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Latte -
+														средство для похудения
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">2</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Money amulet
+														(free)
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">3</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Titan Gel</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">4</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Неинвазивный
+														Глюкометр Glucowise
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">5</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Sensation
+														- детокс шампунь
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-table geo-top__list">
+								<div class="geo-top-country">
+									<div class="geo-top-country-wrap">
+										<img src="img/kg.jpg" alt="Киргизия" class="geo-top-country__flag">
+										<div class="geo-top-country__title">Киргизия</div>
+									</div>
+								</div>
+								<div class="geo-top-info">
+									<ul class="geo-top-info__list">
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">1</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Latte -
+														средство для похудения
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">2</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Money amulet
+														(free)
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">3</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Titan Gel</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">4</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Неинвазивный
+														Глюкометр Glucowise
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">5</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Sensation
+														- детокс шампунь
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-table geo-top__list d-none">
+								<div class="geo-top-country">
+									<div class="geo-top-country-wrap">
+										<img src="img/kg.jpg" alt="Киргизия" class="geo-top-country__flag">
+										<div class="geo-top-country__title">Киргизия</div>
+									</div>
+								</div>
+								<div class="geo-top-info">
+									<ul class="geo-top-info__list">
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">1</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Latte -
+														средство для похудения
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">2</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Money amulet
+														(free)
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">3</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Titan Gel</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">4</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Неинвазивный
+														Глюкометр Glucowise
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">5</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Sensation
+														- детокс шампунь
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row-table geo-top__list d-none">
+								<div class="geo-top-country">
+									<div class="geo-top-country-wrap">
+										<img src="img/kg.jpg" alt="Киргизия" class="geo-top-country__flag">
+										<div class="geo-top-country__title">Киргизия</div>
+									</div>
+								</div>
+								<div class="geo-top-info">
+									<ul class="geo-top-info__list">
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">1</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Latte -
+														средство для похудения
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">2</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Money amulet
+														(free)
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">3</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Titan Gel</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">4</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Неинвазивный
+														Глюкометр Glucowise
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+										<li class="products__item">
+											<a href="" target="_blank">
+												<ul class="offer-info">
+													<li class="offer-info__item"><span class="item-num">5</span></li>
+													<li class="offer-info__item cell-table cell-table-4">Black Sensation
+														- детокс шампунь
+													</li>
+													<li class="offer-info__item cell-table cell-table-1_5">до
+														1200.00р.
+													</li>
+													<li class="offer-info__item cell-table cell-table-1">2.41</li>
+													<li class="offer-info__item cell-table cell-table-1">4.42</li>
+													<li class="offer-info__item cell-table cell-table-1_5">47.55</li>
+												</ul>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="geo-top-more">
+							<button class="link link_geotop">Показать больше</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<%= _.template(FOOTER_TEMPLATE)() %>

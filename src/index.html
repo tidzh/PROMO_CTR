@@ -1,7 +1,9 @@
-<% var templateParameters = require('./template-parameters.js') %>
+<% var data = {
+title: "Авторские офферы",
+}; %>
 <% var HEADER_TEMPLATE = require('./views/header.html').default %>
 <% var FOOTER_TEMPLATE = require('./views/footer.html').default %>
-<%= _.template(HEADER_TEMPLATE)(templateParameters) %>
+<%= _.template(HEADER_TEMPLATE)(data) %>
 <main class="main">
 	<div class="wrapper">
 		<%= _.template(require('./views/interval.html').default)() %>
@@ -374,4 +376,4 @@
 		</div>
 	</div>
 </main>
-<%= _.template(FOOTER_TEMPLATE)(templateParameters) %>
+<%= _.template(FOOTER_TEMPLATE)() %>

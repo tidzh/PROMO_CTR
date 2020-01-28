@@ -1,14 +1,29 @@
+.geo-top__list {
+  overflow-x: scroll;
+  margin-bottom: 10px;
+  @include md-block() {
+    margin-bottom: 0;
+    overflow: auto;
+  }
+}
+.geo-top__list-wrap {
+  display: flex;
+  width: 100%;
+  min-width: 800px;
+}
+
+.geo-top__list_active {
+  display: flex !important;
+}
 .offers-list__head {
+  min-height: 54px;
   font-size: 14px;
   color: #ffff67;
+  text-transform: uppercase;
   background: #103545;
   border-radius: 5px 5px 0 0;
-  text-transform: uppercase;
-  min-height: 54px;
-
   .cell-table {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
 }
@@ -24,9 +39,9 @@
 }
 
 .offers-list__list-number-int {
-  font-family: $font-bold;
   width: 26px;
   height: 26px;
+  font-family: $font-bold;
   border-radius: 5px;
   box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.33);
   background-color: #36ca4e;
@@ -48,7 +63,7 @@
   font-family: $font-lite;
   margin-bottom: 10px;
   @include md-block() {
-    //pointer-events: none;
+    padding: 20px 0;
     background: #1c5c78;
     box-shadow: none;
     border-radius: 0;
@@ -57,10 +72,25 @@
     border: none;
     border-bottom: solid 1px #326e88;
     &:hover {
+      background: #194e65;
       box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.6);
-      background-color: #194e65;
     }
   }
+
+  .geo {
+    @include md-block() {
+      max-width: 260px;
+    }
+  }
+
+  .offers-list__list-number {
+    @include md-block() {
+      &:first-child {
+        padding-left: 30px;
+      }
+    }
+  }
+
   .offers-list__list-row {
     &:last-child {
       @include md-block() {
@@ -83,7 +113,7 @@
 .offers-list__list-title {
   display: inline-block;
   width: calc(100% - 100px);
-  padding: 0 30px;
+  padding: 0 15px 0 30px;
 }
 
 .offers-list__list-title-name {
@@ -104,11 +134,16 @@
     border: none;
     margin-top: 0;
     padding-bottom: 0;
-    display: flex;
+    display: block;
   }
+  @include to(992px) {
+    flex: auto !important;
+  }
+
   .offers-list__header {
     margin-bottom: 0;
   }
+
   &_active {
     display: flex !important;
     @include md-block() {
@@ -119,31 +154,49 @@
 
 .offers-list__list-row-value {
   margin-left: auto;
+  @include md-block() {
+    margin-left: initial;
+  }
 }
 
-@include md-block() {
-  .row-table {
-    display: flex;
+.cell-table {
+  flex: 1;
+  align-items: center;
+  padding: 5px;
+
+  &__indent-left {
+    padding-left: 30px;
   }
 
-  .cell-table {
-    flex: 1;
-    padding: 5px;
+  &__indent-right {
+    padding-right: 30px;
   }
+}
 
-  .cell-table-2 {
-    flex: 2;
-  }
+.row-table {
+  display: flex;
+}
 
-  .cell-table-3 {
-    flex: 3;
-  }
+.cell-table-1_5 {
+  flex: 1.5;
+}
 
-  .cell-table-4 {
-    flex: 4;
-  }
+.cell-table-2 {
+  flex: 2;
+}
 
-  .cell-table-5 {
-    flex: 5;
-  }
+.cell-table-3 {
+  flex: 3;
+}
+
+.cell-table-4 {
+  flex: 4;
+}
+
+.cell-table-5 {
+  flex: 5;
+}
+
+.cell-table-10 {
+  flex: 10;
 }
