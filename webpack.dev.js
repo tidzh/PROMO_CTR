@@ -22,7 +22,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.scss$/,
@@ -127,6 +127,11 @@ module.exports = {
       inject: true,
       template: path.resolve(__dirname, 'src/geotop.html'),
       filename: path.resolve(__dirname, 'public/geotop.html'),
+    }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: path.resolve(__dirname, 'src/aprovtop.html'),
+      filename: path.resolve(__dirname, 'public/aprovtop.html'),
     }),
   ],
 };

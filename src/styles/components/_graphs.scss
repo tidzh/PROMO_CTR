@@ -1,8 +1,8 @@
 .graphs canvas {
-  width: 260px;
-  @include md-block() {
-    width: 240px;
-  }
+  width: 100%;
+  //@include md-block() {
+  //  width: 240px;
+  //}
 }
 
 .graphs__cell, .graphs__table {

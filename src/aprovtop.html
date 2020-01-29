@@ -1,0 +1,118 @@
+<% var data = {
+title: "Топ офферов по апруву",
+}; %>
+<% var HEADER_TEMPLATE = require('./views/header.html').default %>
+<% var FOOTER_TEMPLATE = require('./views/footer.html').default %>
+<%= _.template(HEADER_TEMPLATE)(data) %>
+<main class="main">
+	<div class="wrapper">
+		<%= _.template(require('./views/interval.html').default)() %>
+	</div>
+	<div class="wrapper">
+		<div class="relative">
+			<%= _.template(require('./views/menu.html').default)() %>
+			<div class="main__inner">
+				<div class="flex-bars-root">
+					<div class="flex-bars-head">
+						<h1>Процент одобрения 10 топовых офферов</h1>
+					</div>
+					<div class="flex-bars-wrap">
+						<ul class="flex-bars">
+							<li style="height:24%">
+								<div class="flex-bars__column flex-bars__column_1">
+									<div class="flex-bars__value">24.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">MONEY AMULET (FREE)</div>
+								</div>
+							</li>
+							<li style="height:39%;">
+								<div class="flex-bars__column flex-bars__column_2">
+									<div class="flex-bars__value">39.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">TITAN GEL</div>
+								</div>
+							</li>
+							<li style="color:#7b16b0;height:83%">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">83.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">Black Latte</div>
+								</div>
+							</li>
+							<li style="color:#b91570; height: 21%">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">21.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">MEN`S DEFENCE</div>
+								</div>
+							</li>
+							<li style="color:#f54b50;height:22%">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">22.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">MARAL GEL</div>
+								</div>
+							</li>
+							<li style="color:#0080c0;height:27%;">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">27.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">MONEY AMULET (FREE)</div>
+								</div>
+							</li>
+							<li style="color:#675ebd;height:30%;">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">30.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">ПБК - 20</div>
+								</div>
+							</li>
+							<li style="color:#7b16b0;height:18%">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">18.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">ECO SLIM</div>
+								</div>
+							</li>
+							<li style="color:#b91570; height: 21%">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">21.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">3D Светильник</div>
+								</div>
+							</li>
+							<li style="color:#f54b50;height:24%">
+								<div class="flex-bars__column">
+									<div class="flex-bars__value">24.0%</div>
+								</div>
+								<div class="flex-bars__product">
+									<img src="./img/product/amulet.png" alt="">
+									<div class="flex-bars__product-text">Loravit</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<%= _.template(FOOTER_TEMPLATE)() %>
