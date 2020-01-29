@@ -4,7 +4,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const templateParameters = require('./src/template-parameters.js');
 
 module.exports = {
   devtool: 'source-map',
@@ -111,25 +110,21 @@ module.exports = {
     ]),
     new HtmlWebpackPlugin({
       inject: true,
-      templateParameters,
       template: path.resolve(__dirname, 'src/index.html'),
       filename: path.resolve(__dirname, 'public/index.html'),
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      templateParameters,
       template: path.resolve(__dirname, 'src/new.html'),
       filename: path.resolve(__dirname, 'public/new.html'),
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      templateParameters,
       template: path.resolve(__dirname, 'src/offers.html'),
       filename: path.resolve(__dirname, 'public/offers.html'),
     }),
     new HtmlWebpackPlugin({
       inject: true,
-      templateParameters,
       template: path.resolve(__dirname, 'src/geotop.html'),
       filename: path.resolve(__dirname, 'public/geotop.html'),
     }),

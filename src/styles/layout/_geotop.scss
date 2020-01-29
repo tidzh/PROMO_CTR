@@ -12,11 +12,60 @@
   @include md-block() {
     width: 100%;
   }
+
+  .offers-list__head {
+    border-bottom: 1px solid #326e88;
+    @include md-block() {
+      border: none;
+    }
+  }
 }
 
 .geo-top__list {
+  overflow-x: scroll;
+  margin-bottom: 10px;
   background: #1c5c78;
-  border-bottom: solid 1px #326e88;
+  border-radius: 5px;
+  border: solid 1px #326e88;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #18546e
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #18546e;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 60px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #0089ce;
+  }
+
+  @include md-block() {
+    border: none;
+    border-bottom: solid 1px #326e88;
+    margin-bottom: 0;
+    border-radius: 0;
+    overflow: auto;
+  }
+}
+
+.geo-top__list-wrap {
+  display: flex;
+  width: 100%;
+  min-width: 800px;
+}
+
+.geo-top__list_active {
+  display: flex !important;
 }
 
 .geo-top-country {
